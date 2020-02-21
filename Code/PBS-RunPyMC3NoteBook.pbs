@@ -1,0 +1,32 @@
+#!/bin/tcsh
+#PBS -l mem=64gb,nodes=1:ppn=8,walltime=10:00:00
+#PBS -m abe -M bccluster@mailinator.com
+ 
+#PBS -N PyMC3-Notebook
+#PBS -o PyMC3-Notebook-o
+#PBS -e PyMC3-Notebook-e
+
+# filename PBS-RunPyMC3NoteBook.pbs
+# rm -rf PPBS-RunPyMC3NoteBook.pbs; nano PBS-RunPyMC3NoteBook.pbs
+# qsub PBS-RunPyMC3NoteBook.pbs
+
+conda activate py3
+cd /gsfs0/data/aglinsai/BC-BNP/NoteBooks
+
+set name='pyMC3-VI-Simulated-NUTS'
+
+set dt=`date '+%d:%m:%Y:%H:%M:%S'`
+
+echo 'Running Script' $name.ipynb
+echo 'Starting'
+echo 'Time now is '$dt
+
+jupyter nbconvert --execute $name.ipynb --ExecutePreprocessor.timeout=-1 --to notebook --output $name'_'$dt.ipynb
+
+echo 'Finished'
+echo 'Time now is '$dt
+
+
+#Empty line at the end
+
+

@@ -1,10 +1,9 @@
 #module load anaconda/4.4.0-P3.6
-#conda activate py3
+conda activate py3
 
 cd /gsfs0/data/aglinsai/BC-BNP/NoteBooks
 
-set name='pyMC3-VI-Simulated-advi'
-
+set name='pyMC3-VI-Simulated-NUTS'
 
 set dt=`date '+%d:%m:%Y:%H:%M:%S'`
 
