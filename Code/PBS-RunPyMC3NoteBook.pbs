@@ -7,7 +7,7 @@
 #PBS -e PyMC3-Notebook-e
 
 # filename PBS-RunPyMC3NoteBook.pbs
-# rm -rf PPBS-RunPyMC3NoteBook.pbs; nano PBS-RunPyMC3NoteBook.pbs
+# rm -rf PBS-RunPyMC3NoteBook.pbs; nano PBS-RunPyMC3NoteBook.pbs
 # qsub PBS-RunPyMC3NoteBook.pbs
 
 conda activate py3
