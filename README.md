@@ -4,9 +4,11 @@ Bayesian non-parametric clustering.. of stuff
 
 https://guides.github.com/features/mastering-markdown/
 
-cd /Users/aidasaglinskas/Desktop/BC-BNP/NoteBooks/
 
+
+Running a notebook on the sirius cluster
 ```tcsh
+conda activate py3
 cd /gsfs0/data/aglinsai/BC-BNP/NoteBooks
 set name='pyMC3-VI-Simulated-advi'
 
