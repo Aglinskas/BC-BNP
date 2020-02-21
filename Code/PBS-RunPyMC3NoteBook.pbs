@@ -1,5 +1,5 @@
 #!/bin/tcsh
-#PBS -l mem=64gb,nodes=1:ppn=8,walltime=10:00:00
+#PBS -l mem=64gb,nodes=1:ppn=8,walltime=23:00:00
 #PBS -m abe -M bccluster@mailinator.com
  
 #PBS -N PyMC3-Notebook
