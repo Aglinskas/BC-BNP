@@ -1,1 +1,7 @@
 this is test
+
+jupyter nbconvert --to notebook --execute test.ipynb
+
+jupyter --execute test.ipynb
+
+
