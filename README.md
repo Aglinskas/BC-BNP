@@ -14,7 +14,7 @@ echo 'Running Script' $name.ipynb
 echo 'Starting'
 echo 'Time now is '$dt
 
-jupyter nbconvert --execute $name.ipynb --to html --output $name'_'$dt.html
+jupyter nbconvert --execute $name.ipynb --to notebook --output $name'_'$dt.ipynb
 
 echo 'Finished'
 echo 'Time now is '$dt
